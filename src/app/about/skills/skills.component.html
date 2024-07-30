@@ -1,0 +1,59 @@
+<div class="background text-start px-5 md:pl-32 md:pr-20 p-3">
+  <h1 class="text-5xl font-bold mb-5">Skills</h1>
+  <div class="container mx-auto my-8 p-4">
+    <div class="flex justify-start space-x-4 mb-4">  
+        <button
+          (click)="selectedTab = 'technologies'"
+          [ngClass]="{
+            'bg-gray-400 text-white': selectedTab === 'technologies',
+            'bg-gray-200 text-black': selectedTab !== 'technologies'
+          }"
+          class="px-4 py-2 mb-2 rounded-lg hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
+        >
+        Technologies
+        </button>
+        <button
+          (click)="selectedTab = 'languages'"
+          [ngClass]="{
+            'bg-gray-400 text-white': selectedTab === 'languages',
+            'bg-gray-200 text-black': selectedTab !== 'languages'
+          }"
+          class="px-4 py-2 mb-2 rounded-lg hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
+        >
+          Languages
+        </button>
+        <button
+          (click)="selectedTab = 'databases'"
+          [ngClass]="{
+            'bg-gray-400 text-white': selectedTab === 'databases',
+            'bg-gray-200 text-black': selectedTab !== 'databases'
+          }"
+          class="px-4 py-2 mb-2 rounded-lg hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
+        >
+          Databases
+        </button>
+      </div>
+      @if(selectedTab === 'languages'){
+        <div class="flex flex-wrap items-center">
+            @for (skill of languages; track $index) {
+            <app-skill [skillLogo]="skill.logo" [skillAlt]="skill.alt" />
+            }
+          </div>
+      }
+      @else if (selectedTab === 'technologies') {
+        <div class="flex flex-wrap items-center">
+            @for (skill of technologies; track $index) {
+            <app-skill [skillLogo]="skill.logo" [skillAlt]="skill.alt" />
+            }
+        </div>
+      }
+      @else {
+        <div class="flex flex-wrap items-center">
+            @for (skill of databases; track $index) {
+            <app-skill [skillLogo]="skill.logo" [skillAlt]="skill.alt" />
+            }
+        </div>
+      }
+      
+      </div>
+    </div>
