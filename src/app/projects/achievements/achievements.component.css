@@ -1,0 +1,99 @@
+/* achievements-volunteer.component.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .tab-button {
+    background-color: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+    color: #6b7280;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .tab-button:hover {
+    color: #1f2937;
+  }
+  
+  .tab-button.active {
+    color: #111827;
+    font-weight: 700;
+  }
+  
+  .tab-button.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 2px;
+  }
+  
+  .tab-content {
+    padding: 1rem;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .tab-button.active ~ .tab-content {
+    border-color: #000;
+    border-radius: 10px;
+  }
+  
+  .tab-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tab-content ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .content-box {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-content .text-gray-800 {
+    color: #1f2937;
+  }
+  
+  .tab-content .text-gray-900 {
+    color: #111827;
+  }
+  
+  .tab-content .text-gray-600 {
+    color: #4b5563;
+  }
+  
+  .tab-content a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  .tab-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .tab-content img {
+    border-radius: 0.5rem;
+  }
+  
