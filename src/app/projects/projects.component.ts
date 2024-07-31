@@ -14,7 +14,7 @@ export class ProjectsComponent {
     {
       "name": "Share and Sustain",
       "description": "Food Waste Management Website using Django and Bootstrap",
-      "link": "https://github.com/sricharanreddy11/food-waste-management",
+      "link": "https://share-and-sustain.onrender.com",
       "logo": "https://img.icons8.com/?size=100&id=37o3DqV429ra&format=png&color=000000"
     },
     {

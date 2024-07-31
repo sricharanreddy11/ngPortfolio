@@ -1,3 +1,4 @@
+<!-- contact.component.html -->
 <section class="bg-white dark:bg-gray-900">
   <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
       <figure class="max-w-screen-md mx-auto">
@@ -17,47 +18,44 @@
       </figure>
   </div>
 </section>
-<section class="bg-white"  id="contact">
+<section class="bg-white" id="contact">
   <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-    <h2
-      class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900"
-    >
-      Contact Me
-    </h2>
-    <p
-      class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl"
-    >
-      Want to Collaborate for a project? Have any feedback or suggestions?
-      Please Reach out!
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Me</h2>
+    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
+      Want to Collaborate for a project? Have any feedback or suggestions? Please Reach out!
     </p>
-    <form action="#" class="space-y-8">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-8">
       <div>
-        <label for="email" class="block mb-2 text-sm font-medium text-gray-900"
-          >Email Address</label
-        >
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Email Address</label>
         <input
+          formControlName="email"
           type="email"
           id="email"
           class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           placeholder="youremail@gmail.com"
           required
         />
+        <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)" class="text-red-500 text-sm mt-2">
+          <div *ngIf="contactForm.get('email')?.errors">Email is required/invalid.</div>
+        </div>
       </div>
       <div class="sm:col-span-2">
-        <label
-          for="message"
-          class="block mb-2 text-sm font-medium text-gray-900"
-          >Your message</label
-        >
+        <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
         <textarea
+          formControlName="message"
           id="message"
           rows="6"
           class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
           placeholder="Leave a comment..."
+          required
         ></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && (contactForm.get('message')?.dirty || contactForm.get('message')?.touched)" class="text-red-500 text-sm mt-2">
+          <div *ngIf="contactForm.get('message')?.errors">Message is required.</div>
+        </div>
       </div>
       <button
         type="submit"
+        [disabled]="contactForm.invalid"
         class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
       >
         Send message
