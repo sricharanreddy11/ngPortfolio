@@ -1,35 +1,9 @@
 export class MyData {
     
-
-    
-    education = [
-          {
-            "education": "Bachelor of Engineering",
-            "college": "Vasavi College Of Engineering",
-            "duration": "2020 - 2024",
-            "marks": "9.3 / 10",
-          },
-          {
-            "education": "Intermediate",
-            "college": "Narayana Junior College",
-            "duration": "2018 - 2020",
-            "marks": "990 / 1000",
-          },
-    
-        ]
-    
     achievements = [
         "Awarded an Honours Degree in System on Chip Design (2024), recognizing my expertise and dedication to advanced hardware and software integration.",
         "Received Highest GPA Merit Award for 2 consecutive academic years(2020-21 & 2021-22), reflecting unwavering commitment to academic excellence and high performance.",
         "Achieved Second Rank in Intermediate Public Examinations (2020), demonstrating academic excellence and a strong foundation in core subjects.",
-      ]
-    
-    experience = [
-        {
-          "role": "Software Developer Intern",
-          "organisation": "Adjoint Technologies",
-          "duration": "Jan 2024 - May 2024",
-        }
       ]
     
     organisations = [
