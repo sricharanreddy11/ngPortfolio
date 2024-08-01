@@ -1,14 +1,14 @@
 <div id="about" class="background text-start px-5 md:pl-32 md:pr-20 p-3">
-  <h1 class="text-3xl sm:text-5xl font-bold mb-5">Skills</h1>
-  <div class="container mx-auto my-8 p-4">
-    <div class="flex justify-start space-x-4 mb-4">  
+  <h1 class="text-3xl sm:text-5xl font-bold mb-3 md:mb-5">Skills</h1>
+  <div class="container mx-1 my-8 p-2 md:p-4">
+    <div class="flex justify-start space-x-1 sm:space-x-4 mb-4">  
         <button
           (click)="selectedTab = 'technologies'"
           [ngClass]="{
             'bg-gray-400 text-white': selectedTab === 'technologies',
             'bg-gray-200 text-black': selectedTab !== 'technologies'
           }"
-          class="px-4 py-2 mb-2 rounded-lg hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
+          class="px-2 py-1 md:px-4 md:py-2 mb-2 rounded-lg hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400"
         >
         Technologies
         </button>
