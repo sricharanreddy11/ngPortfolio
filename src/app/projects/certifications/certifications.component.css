@@ -26,7 +26,6 @@
 .card img {
   width: 100%;
   height: 100px;
-  object-contain: cover;
   padding: 1rem;
 }
 
