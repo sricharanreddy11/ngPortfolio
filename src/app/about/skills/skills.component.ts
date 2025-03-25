@@ -5,7 +5,7 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [SkillComponent, NgIf, NgClass],
+  imports: [SkillComponent, NgClass],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })

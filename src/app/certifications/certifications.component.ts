@@ -4,7 +4,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-certifications',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor],
   templateUrl: './certifications.component.html',
   styleUrl: './certifications.component.css'
 })
