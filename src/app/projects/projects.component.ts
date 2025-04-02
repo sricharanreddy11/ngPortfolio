@@ -12,6 +12,17 @@ import { Project } from './project.model';
 export class ProjectsComponent {
   projects : Project[] = [
     {
+      "name": "NoteFluxAI - Intelligent Workflow System",
+      "description": "Angular, Python, Django, TypeScript, Tailwind CSS, PostgreSQL",
+      "detailedDescription": [
+        "Developed an AI-integrated note-taking system with task and project management, enabling users to organize their daily activities efficiently with tagging and grouping features.",
+        "Implemented a chat interface with web sockets, allowing seamless interaction with AI that has access to user-specific data for personalized assistance.",
+        "Created an alert system for task deadlines and a dynamic dashboard offering graphical insights into task progress."
+      ],
+      "link": "https://notefluxai.vercel.app",
+      "logo": "https://img.icons8.com/?size=100&id=36387&format=png&color=000000"
+    },
+    {
       "name": "Smart Video Surveillance Using YOLO Algorithm and Open CV",
       "description": "Deep Learning, Neural Networks, Python",
       "detailedDescription": [
@@ -32,17 +43,6 @@ export class ProjectsComponent {
       ],
       "link": "https://share-and-sustain.onrender.com",
       "logo": "https://img.icons8.com/?size=100&id=37o3DqV429ra&format=png&color=000000"
-    },
-    {
-      "name": "NoteFluxAI - Intelligent Workflow System",
-      "description": "Angular, Python, Django, TypeScript, Tailwind CSS, PostgreSQL",
-      "detailedDescription": [
-        "Developed an AI-integrated note-taking system with task and project management, enabling users to organize their daily activities efficiently with tagging and grouping features.",
-        "Implemented a chat interface with web sockets, allowing seamless interaction with AI that has access to user-specific data for personalized assistance.",
-        "Created an alert system for task deadlines and a dynamic dashboard offering graphical insights into task progress."
-      ],
-      "link": "https://github.com/sricharanreddy11/task-management",
-      "logo": "https://img.icons8.com/?size=100&id=36387&format=png&color=000000"
     },
     {
       "name": "inConnector",
