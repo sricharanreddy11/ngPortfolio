@@ -1,6 +1,6 @@
 export interface Interest {
   title: string;
   description: string;
-  icon: string;
+  icon: any;
   category: 'AI' | 'Technology' | 'Development';
 }
