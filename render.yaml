@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ng-portfolio
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist/ng-portfolio
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html 
