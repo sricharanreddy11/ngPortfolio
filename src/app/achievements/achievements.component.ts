@@ -28,7 +28,7 @@ export class AchievementsComponent {
       name: "Newton's Apple",
       logo: "https://media.licdn.com/dms/image/D4E0BAQHCgeuuC1TUmA/company-logo_200_200/0/1665588131390?e=2147483647&v=beta&t=wr7Ar0z-bVD3pIRiZfMZDDUIprDyEZ1P1NH3N9JUBDE",
       description: "Worked as Content Developer at Newton's Apple, monthly magazine run by students of E.C.E. at Vasavi College of Engineering",
-      link: "https://vce-newtonsapple.github.io/magazine/",
+      link: "https://vce-newtonsapple.github.io/magazine/media/logo_transparent.PNG",
     },
   ];
 

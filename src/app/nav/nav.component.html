@@ -7,6 +7,17 @@
                     <img class="h-7 w-auto" src="https://img.icons8.com/?size=100&id=RljciFZGONCD&format=png&color=000000" alt="logo">
                 </a>
             </div>
+            <!-- Mobile menu button -->
+            <button (click)="toggleMobileMenu()" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" [ngClass]="{'hidden': isMobileMenuOpen, 'block': !isMobileMenuOpen}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="h-6 w-6" [ngClass]="{'block': isMobileMenuOpen, 'hidden': !isMobileMenuOpen}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <!-- Desktop Navigation -->
             <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
                 <a aria-current="page"
                     class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
@@ -16,9 +27,22 @@
                 <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
                 routerLink="interests">About</a>
             </div>
-            <div class="flex items-center justify-end gap-3">
-                <a class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
+            <div class="hidden md:flex items-center justify-end gap-3">
+                <a class="items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50"
                     href="#contact">Contact Me</a>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <div class="md:hidden" [ngClass]="{'block': isMobileMenuOpen, 'hidden': !isMobileMenuOpen}">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    routerLink="/" (click)="toggleMobileMenu()">Home</a>
+                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    routerLink="projects" (click)="toggleMobileMenu()">Projects</a>
+                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    routerLink="interests" (click)="toggleMobileMenu()">About</a>
+                <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100 hover:text-gray-900"
+                    href="#contact" (click)="toggleMobileMenu()">Contact Me</a>
             </div>
         </div>
     </div>

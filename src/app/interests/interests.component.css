@@ -1,0 +1,32 @@
+:host {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.bg-gradient-to-b {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.transform {
+  transition: all 0.3s ease;
+}
+
+.transform:hover {
+  transform: translateY(-5px);
+}

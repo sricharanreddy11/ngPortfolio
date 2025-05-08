@@ -1,5 +1,5 @@
 <div
-  class="background flex flex-col md:flex-row items-center justify-center w-full h-screen"
+  class="background flex flex-col md:flex-row items-center justify-center w-full min-h-screen px-4 py-16 md:py-0"
 >
   <div class="text-start mx-5 md:ml-32 md:mr-20 p-5 md:p-0">
     <h1 class="text-5xl font-bold text-black">Hi!</h1>
@@ -9,8 +9,8 @@
         {{ data.name }}
       </span>
     </h1>
-    <h1 class="text-2xl font-bold mt-2 text-slate-600">{{ data.role }}</h1>
-    <p class="text-gray-900 mt-4">
+    <h1 class="text-xl md:text-2xl font-bold mt-2 text-slate-600">{{ data.role }}</h1>
+    <p class="text-gray-900 mt-4 text-base md:text-lg">
       {{ data.description }}
     </p>
     <div class="flex justify-start space-x-4 mt-6">
@@ -18,10 +18,10 @@
         href="{{ data.github }}"
         target="_blank"
         rel="noreferrer"
-        class="text-gray-600 hover:text-blue-600"
+        class="text-gray-600 hover:text-blue-600 transition-colors duration-200"
       >
         <img
-          class="w-10 h-10"
+          class="w-8 h-8 md:w-10 md:h-10"
           src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000"
           alt="GitHub logo"
         />
@@ -30,10 +30,10 @@
         href="{{ data.linkedin }}"
         target="_blank"
         rel="noreferrer"
-        class="text-gray-600 hover:text-blue-600"
+        class="text-gray-600 hover:text-blue-600 transition-colors duration-200"
       >
         <img
-          class="w-10 h-10"
+          class="w-8 h-8 md:w-10 md:h-10"
           src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000"
           alt="LinkedIn logo"
         />
@@ -42,10 +42,10 @@
         href="{{ data.mail }}"
         target="_blank"
         rel="noreferrer"
-        class="text-gray-600 hover:text-blue-600"
+        class="text-gray-600 hover:text-blue-600 transition-colors duration-200"
       >
         <img
-          class="w-10 h-10"
+          class="w-8 h-8 md:w-10 md:h-10"
           src="https://img.icons8.com/?size=100&id=53435&format=png&color=000000"
           alt="Mail logo"
         />
@@ -54,10 +54,10 @@
         href="{{ data.twitter }}"
         target="_blank"
         rel="noreferrer"
-        class="text-gray-600 hover:text-blue-600"
+        class="text-gray-600 hover:text-blue-600 transition-colors duration-200"
       >
         <img
-          class="w-10 h-10"
+          class="w-8 h-8 md:w-10 md:h-10"
           src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
           alt="Twitter logo"
         />
@@ -65,7 +65,7 @@
     </div>
   </div>
   <img
-    class="w-52 h-52 hidden md:block md:static mt-8 md:mt-0 md:mr-32 rounded-2xl -rotate-6 shadow-lg border-white"
+    class="w-40 h-40 hidden md:block md:static md:w-52 md:h-52 mt-8 md:mt-0 md:mr-32 rounded-2xl -rotate-6 shadow-lg border-white"
     src="https://i.pinimg.com/originals/8d/4c/40/8d4c404b1fc27606e8f37e8d01bd8f49.jpg"
     alt="Profile"
   />
