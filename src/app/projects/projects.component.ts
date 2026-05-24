@@ -12,6 +12,19 @@ import { Project } from './project.model';
 export class ProjectsComponent {
   projects : Project[] = [
     {
+      "name": "Socratic-OT - Multimodal AI Tutoring System",
+      "description": "Python, FastAPI, Retrieval-Augmented Generation (RAG), ChromaDB, LangChain, Groq Llama 3.1, Gemini Flash, SBERT",
+      "detailedDescription": [
+        "Developed a multimodal AI tutoring platform for Occupational Therapy students using Retrieval-Augmented Generation (RAG) grounded on OpenStax Anatomy & Physiology content with over 8,500 indexed knowledge chunks.",
+        "Designed a three-agent Socratic tutoring architecture (Analyzer, Tutor, Reveal) that guides students through reasoning-based learning while preventing direct-answer leakage during early interactions.",
+        "Built an image-based anatomical tutoring pipeline using Gemini Vision models, structured metadata matching, and vector retrieval to analyze and tutor students on anatomical diagrams with 81% structure recall accuracy.",
+        "Implemented session-based conversational memory, personalized tutoring workflows, and cross-session mistake tracking to provide adaptive learning experiences and targeted revision guidance.",
+        "Evaluated the system using RAGAS metrics, achieving strong retrieval coverage and multimodal grounding performance while identifying optimization paths for retrieval faithfulness and contextual relevance."
+      ],
+      "link": "https://ot-tutor-ecme.onrender.com/chat",
+      "logo": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/fastapi-icon-72blnc5ihz9c30ltfruvm.png/fastapi-icon-sv7hsd0o3donlq26es2lr.png?_a=DATAiZAAZAA0"
+    },
+    {
       "name": "NoteFluxAI - Intelligent Workflow System",
       "description": "Angular, Python, Django, TypeScript, Tailwind CSS, PostgreSQL",
       "detailedDescription": [
@@ -21,6 +34,19 @@ export class ProjectsComponent {
       ],
       "link": "https://notefluxai.vercel.app",
       "logo": "https://img.icons8.com/?size=100&id=36387&format=png&color=000000"
+    },
+    {
+      "name": "Retrieval-Augmented Text Classification",
+      "description": "Python, PyTorch, Transformers, ChromaDB, SBERT, GloVe, Deep Learning, NLP",
+      "detailedDescription": [
+        "Developed a retrieval-augmented text classification pipeline for the AG News dataset by integrating semantic retrieval with Transformer-based neural architectures.",
+        "Built a scalable semantic retrieval system using ChromaDB and Sentence-BERT embeddings over a 120,000-document knowledge base, achieving 97.75% retrieval Accuracy@5.",
+        "Implemented multiple retrieval-augmented classification architectures including Text-Concat RAC, Retrieval Fusion Transformer, and a Cross-Attention RAC model with probability interpolation.",
+        "Designed embedding-level fusion and gated cross-attention mechanisms that combined retrieved semantic context with Transformer representations for improved topic classification accuracy.",
+        "Improved classification performance from 89.05% baseline accuracy to 93.16% using retrieval-augmented models, with significant gains on semantically overlapping Business and Sci/Tech categories."
+      ],
+      "link": "",
+      "logo": "https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000"
     },
     {
       "name": "Smart Video Surveillance Using YOLO Algorithm and Open CV",
