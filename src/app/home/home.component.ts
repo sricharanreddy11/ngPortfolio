@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { CertificationsComponent } from "../certifications/certifications.component";
 import { AchievementsComponent } from "../achievements/achievements.component";
 import { AboutComponent } from "../about/about.component";
+import { HomeProjectsComponent } from "../home-projects/home-projects.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CertificationsComponent, AchievementsComponent, AboutComponent],
+  imports: [CertificationsComponent, AchievementsComponent, AboutComponent, HomeProjectsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
