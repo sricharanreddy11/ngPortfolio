@@ -10,8 +10,14 @@ import { Component } from '@angular/core';
 export class EducationComponent {
   education = [
     {
+      "education": "MS in Computer Science and Engineering",
+      "college": "University at Buffalo",
+      "duration": "2025 - 2027",
+      "marks": "4.0 / 4.0",
+    },
+    {
       "education": "Bachelor of Engineering",
-      "college": "Vasavi College Of Engineering",
+      "college": "Osmania University",
       "duration": "2020 - 2024",
       "marks": "9.3 / 10",
     },

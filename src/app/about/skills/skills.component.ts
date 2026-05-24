@@ -47,6 +47,14 @@ technologies = [
       "alt": "Django"
     },
     {
+      "logo": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/fastapi-icon-72blnc5ihz9c30ltfruvm.png/fastapi-icon-sv7hsd0o3donlq26es2lr.png?_a=DATAiZAAZAA0",
+      "alt": "FastAPI"
+    },
+    {
+      "logo": "https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000",
+      "alt": "Pytorch"
+    },
+    {
       "logo": "https://img.icons8.com/?size=100&id=j9DnICNnlhGk&format=png&color=000000",
       "alt": "Angular"
     },
@@ -71,7 +79,7 @@ technologies = [
       "alt": "Flask"
     },
     {
-      "logo": "https://storage.caktusgroup.com/media/blog-images/drf-logo2.png",
+      "logo": "https://www.django-rest-framework.org/img/logo-dark.png#only-dark",
       "alt": "Django REST Framework"
     },
   ]
@@ -92,6 +100,10 @@ databases = [
     {
       "logo": "https://img.icons8.com/?size=100&id=VMRAbKfEzssG&format=png&color=000000",
       "alt": "SQLite"
+    },
+    {
+      "logo": "https://dt-cdn.net/hub/chroma.d840f629-icon.png",
+      "alt": "ChromaDB"
     },
   ]
 

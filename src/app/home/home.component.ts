@@ -13,7 +13,7 @@ export class HomeComponent {
     data = {
       "name" : "Sri Charan Reddy",
       "role": "Software Developer",
-      "description": "I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+      "description": "I have experience in building scalable, secure, and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am also interested in Machine Learning and Natural Language Processing, and I enjoy building AI-powered applications involving semantic search, intelligent automation, and conversational systems.",
       "github":"https://github.com/sricharanreddy11",
       "linkedin":"https://www.linkedin.com/in/sricharanreddy11/",
       "mail":"mailto:sricharanteegala@gmail.com",
